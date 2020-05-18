@@ -1,0 +1,14 @@
+<% include ./header.ejs %>
+
+    <% if(showTitle) { %>
+        <%- title %>
+            <% } else { %>
+                <h1>no title given</h1>
+                <% } %>
+                    <% for (let i=0;i<data.length;i++) { %>
+                        <li>
+                            <%= data[i] %>
+                        </li>
+                        <% } %>
+
+                            <% include ./footer.ejs %>
